@@ -1,0 +1,102 @@
+.chat-lsb{
+    /* border: 2px solid salmon; */
+    background-color: #00052b;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 95vh;
+}
+
+.lsb-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.lsb-top .logo{
+    /* border: 2px solid tomato; */
+    max-width: 150px;
+}
+
+.lsb-top .logo img{
+    width: 100%;
+}
+
+.lsb-top .menu{
+    /* border: 2px solid tomato; */
+    max-width: 30px;
+}
+
+.lsb-top .menu img{
+    width: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.lsb-search{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #003161;
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.4);
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.lsb-search img{
+    width: 16px;
+    cursor: pointer;
+}
+
+.lsb-search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 80px;
+}
+
+.lsb-search input::placeholder{
+    color:aliceblue
+}
+
+.lsb-friend-list{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+}
+
+.each-friend{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 0px 8px 20px;
+}
+
+.each-friend:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.each-friend img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.each-friend .name-msg{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.each-friend .name-msg .message{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}

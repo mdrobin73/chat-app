@@ -1,0 +1,29 @@
+.chat-box{
+    border: 2px solid salmon;
+    position: relative;
+}
+
+.chat-box-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.user-img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-size: 28px;
+    font-weight: 400;
+    color: #1A1A1D;
+    opacity: 0.8;
+    flex: 1;
+}
+
+.help-img{
+    width: 30px;
+}

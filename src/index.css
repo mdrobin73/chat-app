@@ -7,3 +7,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* To hide the scrollbars, but still be able to keep scrolling, you can use the following code: */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.lsb-friend-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
