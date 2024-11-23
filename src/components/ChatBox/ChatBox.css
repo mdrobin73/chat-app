@@ -1,29 +1,138 @@
 .chat-box{
-    border: 2px solid salmon;
     position: relative;
+    height: 100vh;
 }
 
 .chat-box-top{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 15px;
-    border-bottom: 2px solid rgb(228, 228, 228);
+    padding: 10px;
+    border-bottom: 2px solid rgb(228, 228, 228, 0.5);
 }
 
 .user-img{
-    width: 70px;
+    width: 60px;
     border-radius: 50%;
 }
 
 .user-name{
     font-size: 28px;
     font-weight: 400;
-    color: #1A1A1D;
-    opacity: 0.8;
+    color: #373738;
     flex: 1;
 }
 
 .help-img{
     width: 30px;
+}
+
+
+
+/* Chat Box - Sender and Receiver Messages Styles */
+.chat-box-messages{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    overflow-y: auto;
+    height: 80vh;
+    padding-bottom: 30px;
+    scroll-behavior: smooth;
+}
+
+.user-image{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.msg-receiver{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+
+.msg-sender{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.image-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.r-message, .s-message{
+    background-color: #00052b;
+    color: aliceblue;
+    max-width: 280px;
+    padding: 8px;
+    border-radius: 12px 6px 12px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.s-message{
+    border-radius: 6px 12px 0px 12px;
+}
+
+.msg-image{
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+
+/* Chat Box - Bottom Input Styles */
+.chat-box-input{
+    /* border: 1px solid tomato; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 3px;
+    box-shadow: 1px 0px 5px rgba(172, 163, 163, 0.5);
+}
+
+.chat-box-input input{
+    border: none;
+    outline: none;
+    flex: 1;
+    color: #00031a;
+    
+}
+
+.chat-box-input input::placeholder{
+    color: #00031a;
+    opacity: 0.6;
+}
+
+.chat-box-input label{
+    display: flex;
+}
+
+.chat-box-input label img{
+    width: 25px;
+}
+
+.chat-box-input img{
+    width: 40px;
+    cursor: pointer;
 }

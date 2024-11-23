@@ -8,6 +8,8 @@ import pic1 from './pic1.png'
 import pic2 from './pic2.png'
 import pic3 from './pic3.png'
 import pic4 from './pic4.png'
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
 import profile_richard from './profile_richard.png'
 import profile_alison from './profile_alison.png'
 import search_icon from './search_icon.png'
@@ -28,6 +30,8 @@ const assets = {
     pic2,
     pic3,
     pic4,
+    img1,
+    img2,
     profile_richard,
     profile_alison,
     search_icon,
