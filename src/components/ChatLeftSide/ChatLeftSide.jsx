@@ -11,6 +11,10 @@ const ChatLeftSide = () => {
                 </div>
                 <div className="menu">
                     <img src={assets.menu_icon} alt="" />
+                    <div className="sub-menu">
+                        <p className='edit-profile'>Edit Profile</p>
+                        <p>Logout</p>
+                    </div>
                 </div>
             </div>
 

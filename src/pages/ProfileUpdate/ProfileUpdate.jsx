@@ -4,7 +4,7 @@ import "./ProfileUpdate.css"
 const ProfileUpdate = () => {
     return (
         <div>
-            
+            <h2>Hi</h2>
         </div>
     );
 };

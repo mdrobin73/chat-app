@@ -1,40 +1,76 @@
-.chat-lsb{
-    /* border: 2px solid salmon; */
+.chat-lsb {
     background-color: #00052b;
     display: flex;
     flex-direction: column;
     gap: 20px;
     height: 100vh;
+    max-width: 300px;
 }
 
-.lsb-top{
+.lsb-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.lsb-top .logo{
-    /* border: 2px solid tomato; */
+.lsb-top .logo {
     max-width: 150px;
 }
 
-.lsb-top .logo img{
+.lsb-top .logo img {
     width: 100%;
 }
 
-.lsb-top .menu{
-    /* border: 2px solid tomato; */
-    max-width: 30px;
+.lsb-top .menu {
+    max-width: 25px;
+    position: relative;
+    /* padding: 10px 0px; */
 }
 
-.lsb-top .menu img{
+.lsb-top .menu img {
     width: 100%;
     opacity: 0.7;
     cursor: pointer;
 }
 
-.lsb-search{
+.lsb-top .menu .sub-menu {
+    background-color: aliceblue;
+    color: #00052b;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0px 1px 3px aliceblue;
+    display: none;
+}
+
+.sub-menu p {
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.edit-profile {
+    border-bottom: 1px solid rgba(209, 210, 212, 0.5);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    box-shadow: 0px 1px 5px;
+}
+
+.menu:hover .sub-menu {
+    display: block;
+}
+
+.lsb-search {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -46,12 +82,12 @@
     margin-top: 0px;
 }
 
-.lsb-search img{
+.lsb-search img {
     width: 16px;
     cursor: pointer;
 }
 
-.lsb-search input{
+.lsb-search input {
     background-color: transparent;
     border: none;
     outline: none;
@@ -60,18 +96,18 @@
     padding-right: 80px;
 }
 
-.lsb-search input::placeholder{
-    color:aliceblue
+.lsb-search input::placeholder {
+    color: aliceblue
 }
 
-.lsb-friend-list{
+.lsb-friend-list {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     color: aliceblue;
 }
 
-.each-friend{
+.each-friend {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -80,24 +116,24 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.each-friend:hover{
+.each-friend:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
-.each-friend img{
+.each-friend img {
     width: 50px;
     border-radius: 50%;
 }
 
-.each-friend .name-msg{
+.each-friend .name-msg {
     display: flex;
     flex-direction: column;
     gap: 4px;
     font-size: 14px;
 }
 
-.each-friend .name-msg .message{
+.each-friend .name-msg .message {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
 }

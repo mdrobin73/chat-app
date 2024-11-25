@@ -12,35 +12,39 @@ const ChatBox = () => {
             </div>
 
             <div className="chat-box-messages">
-                <div className="msg-receiver">
-                    <p className='r-message'>Hi Alison, What are you doing? Do not forget to send me a text</p>
-                    <div className='image-time'>
-                        <img className='user-image' src={assets.profile_alison} alt="" />
-                        <p>1.00 Am</p>
+                <div className='receiver-messages'>
+                    <div className="msg-receiver">
+                        <p className='r-message'>Hi Alison, What are you doing? Do not forget to send me a text</p>
+                        <div className='image-time'>
+                            <img className='user-image' src={assets.profile_alison} alt="" />
+                            <p>1.00 Am</p>
+                        </div>
+                    </div>
+
+                    <div className="msg-receiver">
+                        <img className="msg-image" src={assets.img2} alt="" />
+                        <div className='image-time'>
+                            <img className='user-image' src={assets.profile_alison} alt="" />
+                            <p>1.00 Am</p>
+                        </div>
                     </div>
                 </div>
 
-                <div className="msg-receiver">
-                <img className="msg-image" src={assets.img2} alt="" />
-                    <div className='image-time'>
-                        <img className='user-image' src={assets.profile_alison} alt="" />
-                        <p>1.00 Am</p>
+                <div className='sender-messages'>
+                    <div className="msg-sender">
+                        <img className="msg-image" src={assets.img1} alt="" />
+                        <div className='image-time'>
+                            <img className='user-image' src={assets.profile_richard} alt="" />
+                            <p>1.01 Am</p>
+                        </div>
                     </div>
-                </div>                
 
-                <div className="msg-sender">
-                    <img className="msg-image" src={assets.img1} alt="" />
-                    <div className='image-time'>
-                        <img className='user-image' src={assets.profile_richard} alt="" />
-                        <p>1.01 Am</p>
-                    </div>
-                </div>
-
-                <div className="msg-sender">
-                    <p className='s-message'>Yes, I remember you. I am fine, what about you?</p>
-                    <div className='image-time'>
-                        <img className='user-image' src={assets.profile_richard} alt="" />
-                        <p>1.01 Am</p>
+                    <div className="msg-sender">
+                        <p className='s-message'>Yes, I remember you. I am fine, what about you?</p>
+                        <div className='image-time'>
+                            <img className='user-image' src={assets.profile_richard} alt="" />
+                            <p>1.01 Am</p>
+                        </div>
                     </div>
                 </div>
             </div>
