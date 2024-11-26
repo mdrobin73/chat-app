@@ -52,9 +52,9 @@ const ChatBox = () => {
             <div className="chat-box-input">
                 <input type="text" name="" id="" placeholder='Send a message' />
 
-                <input type="file" name="" id="upload-image" accept='image/png, image/jpeg, image/jpg' hidden />
-
                 <label htmlFor="upload-image">
+                    <input type="file" name="" id="upload-image" accept='image/png, image/jpeg, image/jpg' hidden />
+
                     <img src={assets.gallery_icon} alt="" />
                 </label>
 

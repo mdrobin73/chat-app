@@ -1,10 +1,25 @@
 import React, { useState } from 'react';
 import "./Login.css";
 import assets from "../../assets/assets"
+import { login, signup } from '../../config/firebase';
 
 const Login = () => {
 
     const [currentState, setCurrentState] = useState("Login");
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleAuthentication = (e) => {
+        e.preventDefault();
+
+        if (currentState === "Sign Up") {
+            signup(username, email, password);
+            console.log(username, email, password);
+        } else {
+            login(email, password)
+        }
+    }
 
     return (
         <div className='login'>
@@ -16,21 +31,22 @@ const Login = () => {
                 <h2>{currentState}</h2>
                 <form>
                     {
-                        currentState === "Sign Up" ? <input type="text" placeholder='username' className="input-info" required /> : null
+                        currentState === "Sign Up" ? <input onChange={(e) => setUsername(e.target.value)}  type="text" placeholder='username' className="input-info" required /> : null
                     }
 
-                    <input type="email" placeholder='email' className="input-info" required />
+                    <input onChange={(e) => setEmail(e.target.value)}  type="email" placeholder='email' className="input-info" required />
 
-                    <input type="password" placeholder='password' className="input-info" required />
+                    <input onChange={(e) => setPassword(e.target.value)}  type="password" placeholder='password' className="input-info" required />
 
-                    <button type='submit'>{currentState === "Sign Up" ? "Register" : "Login"}</button>
+                    {
+                        currentState === "Sign Up" ? <div className="terms-conditions">
+                            <input type="checkbox" name="" id="" required />
+                            <p>Accept terms and conditions.</p>
+                        </div> : null
+                    }
+                    
+                    <button onClick={handleAuthentication} type='submit'>{currentState === "Sign Up" ? "Register" : "Login"}</button>
                 </form>
-                {
-                    currentState === "Sign Up" ? <div className="terms-conditions">
-                        <input type="checkbox" name="" id="" />
-                        <p>Accept terms and conditions.</p>
-                    </div> : null
-                }
 
                 <div className="forgot-info">
                     {

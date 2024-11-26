@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ChatRightSide.css"
 import assets from '../../assets/assets';
+import { logout } from '../../config/firebase';
 
 const ChatRightSide = () => {
     return (
@@ -50,7 +51,7 @@ const ChatRightSide = () => {
             </div>
 
             <div className="rsb-bottom">
-                <button>Logout</button>
+                <button onClick={() => logout()}>Logout</button>
             </div>
         </div>
     );
